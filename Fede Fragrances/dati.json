@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "nome": "Ocean Breeze",
+    "prezzo": 154.99,
+    "descrizione": "LA FRAGRANZA ICONICA PER L’UOMO TRASGRESSIVO LE MALE è una fragranza irresistibilmente",
+    "immagine": "./immagini/LE MALE.png"
+  },
+  {
+    "id": 2,
+    "nome": "Oro Silenzioso",
+    "prezzo": 90.50,
+    "descrizione": "Una fragranza floreale boisé che emana eleganza raffinata grazie all'accostamento tra l'accordo di iris e il vetiver. Una celebrazione di ricercatezza",
+    "immagine": "./immagini/valentino.webp"
+  },
+  {
+    "id": 3,
+    "nome": "Brutus",
+    "prezzo": 100.00,
+    "descrizione": "Un mix energizzante di limone, arancia e bergamotto.",
+    "immagine": "./immagini/valentino noir.webp"
+  },
+  {
+    "id": 4,
+    "nome": "Notte Fiorita",
+    "prezzo": 89.99,
+    "descrizione": "Note legnose e speziate per una fragranza avvolgente.",
+    "immagine": "./immagini/Les Males.avif"
+  },
+  {
+    "id": 5,
+    "nome": "Mida",
+    "prezzo": 110.00,
+    "descrizione": "Profumo caldo e sensuale con ambra e vaniglia.",
+    "immagine": "./immagini/le male oro.avif"
+  },
+  {
+    "id": 6,
+    "nome": "Velluto Del Tramonto",
+    "prezzo": 75.00,
+    "descrizione": "Fresca fragranza primaverile con fiori bianchi.",
+    "immagine": "./immagini/femmina.avif"
+  },
+  {
+    "id": 7,
+    "nome": "Incanto d'Oriente",
+    "prezzo": 99.99,
+    "descrizione": "Una fragranza intensa con oud e spezie orientali.",
+    "immagine": "./immagini/femmina2.avif"
+  },
+  {
+    "id": 8,
+    "nome": "ombra di luna",
+    "prezzo": 88.00,
+    "descrizione": "Calmante e delicata miscela di lavanda e erbe.",
+    "immagine": "./immagini/valentino3.webp"
+  }
+]

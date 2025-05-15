@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrello - Fede Fragrance</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Intestazione -->
+  <header>
+    <h1>Il tuo carrello</h1>
+    <nav>
+      <a href="index.html"> Torna ai profumi</a>
+    </nav>
+  </header>
+
+  <!-- Corpo del carrello -->
+  <main>
+    <h2>Prodotti selezionati</h2>
+
+    <!-- Pulsante per svuotare il carrello -->
+    <button onclick="svuotaCarrello()" style="margin-bottom: 20px; padding: 10px; font-size: 1rem;">
+       Svuota carrello
+    </button>
+
+    <!-- Contenitore dei prodotti -->
+    <div id="contenitore-carrello" class="grid-prodotti"></div>
+  </main>
+
+  <!-- Piè di pagina -->
+  <footer>
+    <p>&copy; 2025 Fede Fragrance. Tutti i diritti riservati.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", mostraCarrello);
+  </script>
+</body>
+</html>
