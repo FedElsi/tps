@@ -1,4 +1,3 @@
-// Caricamento dati prodotti quando siamo nella home
 document.addEventListener("DOMContentLoaded", () => {
   const contenitore = document.getElementById("contenitore");
   if (contenitore) {
@@ -15,9 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-let prodotti = []; // Array dei prodotti dal file JSON
+let prodotti = [];
 
-// Mostra i prodotti nella home page
 function mostraProdotti() {
   const contenitore = document.getElementById("contenitore");
   contenitore.innerHTML = "";
@@ -37,7 +35,6 @@ function mostraProdotti() {
   });
 }
 
-// Aggiunge un prodotto al carrello e lo salva nel localStorage
 function aggiungiAlCarrello(idProdotto) {
   let carrello = JSON.parse(localStorage.getItem("carrello")) || [];
   const prodotto = prodotti.find(p => p.id === idProdotto);
@@ -48,7 +45,6 @@ function aggiungiAlCarrello(idProdotto) {
   }
 }
 
-// Mostra i prodotti presenti nel carrello
 function mostraCarrello() {
   const contenitore = document.getElementById("contenitore-carrello");
   const carrello = JSON.parse(localStorage.getItem("carrello")) || [];
@@ -74,7 +70,6 @@ function mostraCarrello() {
   });
 }
 
-//  NUOVA FUNZIONE: Svuota il carrello
 function svuotaCarrello() {
   localStorage.removeItem("carrello"); // Cancella tutto
   mostraCarrello(); // Ricarica la pagina
