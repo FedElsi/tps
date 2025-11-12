@@ -9,8 +9,9 @@ let stringhe = [];
 window.onload = leggi;
 
 function leggi() {
-    document.querySelector('select[onchange*="cognome"]').selectedIndex = 0;
-    document.querySelector('select[onchange*="nome"]').selectedIndex = 0;
+    // Reset select elements by ID directly
+    document.getElementById('cognomeSelect').selectedIndex = 0;
+    document.getElementById('nomeSelect').selectedIndex = 0;
 
     const req = new XMLHttpRequest();
     req.open("GET", 'utenti.json', true);
@@ -46,11 +47,11 @@ function inserisci(file) {
 
 function salvaStringhe(parametro, valore) {
     if (parametro === "nome") {
-        document.querySelector('select[onchange*="cognome"]').selectedIndex = 0;
+        document.getElementById('cognomeSelect').selectedIndex = 0;
     }
 
     if (parametro === "cognome") {
-        document.querySelector('select[onchange*="nome"]').selectedIndex = 0;
+        document.getElementById('nomeSelect').selectedIndex = 0;
     }
 
     let rispettano = [];
@@ -74,8 +75,8 @@ function salvaStringhe(parametro, valore) {
 }
 
 function minorenni() {
-    document.querySelector('select[onchange*="cognome"]').selectedIndex = 0;
-    document.querySelector('select[onchange*="nome"]').selectedIndex = 0;
+    document.getElementById('cognomeSelect').selectedIndex = 0;
+    document.getElementById('nomeSelect').selectedIndex = 0;
     console.log(json);
     let età = [];
     for (let i of json) {
@@ -87,8 +88,8 @@ function minorenni() {
 }
 
 function maggiorenni() {
-    document.querySelector('select[onchange*="cognome"]').selectedIndex = 0;
-    document.querySelector('select[onchange*="nome"]').selectedIndex = 0;
+    document.getElementById('cognomeSelect').selectedIndex = 0;
+    document.getElementById('nomeSelect').selectedIndex = 0;
     console.log(json);
     let età = [];
     for (let i of json) {
